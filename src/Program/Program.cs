@@ -2,11 +2,11 @@
 {
     public static void Main()
     {
+        Console.WriteLine("Demo calculadora");
         Console.WriteLine(Addition.Add(1, 2));
         Console.WriteLine(Subtraction.Subtract(3, 4));
         Console.WriteLine(Multiplication.Multiply(5, 6));
         Console.WriteLine(Division.Divide(7, 8));
-      
     }
 }
 
@@ -14,10 +14,10 @@
 
 public class Addition
 {
-    public static int Add(int a, int b)
-    {
-        return 0; // Cambio incorrecto
-    }
+   public static int Add(int a, int b)
+   {
+       return a + b;
+   }
 }
 
 
@@ -46,4 +46,12 @@ public class Subtraction
    {
        return a - b;
    }
+}
+// Devuelve a al cuadrado
+public class Power
+{
+    public static int Squared(int a)
+    {
+        return a * a;
+    }
 }
